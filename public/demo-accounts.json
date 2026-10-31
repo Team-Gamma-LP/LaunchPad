@@ -1,0 +1,18 @@
+[
+  {
+    "id": "c26b3f9675ee79a5",
+    "clientId": "verdae",
+    "email": "judieysiggy@gmail.com",
+    "role": "admin",
+    "salt": "99562190b4d6712131d5a4b0e646b77e",
+    "passwordHash": "3b4fb75f003d5739bdb46e2dbc7af55445ccbbed4eefb155c50ff18e238375c5"
+  },
+  {
+    "id": "d3db58d14e84eb48",
+    "clientId": "studio",
+    "email": "admin@studio.demo",
+    "role": "admin",
+    "salt": "4e2a62adeac4065597795fda45e5b558",
+    "passwordHash": "f174697e5b8e802f109f6fa4a6ecec5f02fdd9f8672fe48c64cbafc880cfb31e"
+  }
+]

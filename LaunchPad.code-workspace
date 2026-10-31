@@ -1,0 +1,8 @@
+{
+  "folders": [{ "name": "LaunchPad", "path": "." }],
+  "settings": {
+    "editor.tabSize": 2,
+    "files.exclude": { "**/node_modules": true, "**/dist": true },
+    "search.exclude": { "**/package-lock.json": true, "**/dist": true },
+  },
+}

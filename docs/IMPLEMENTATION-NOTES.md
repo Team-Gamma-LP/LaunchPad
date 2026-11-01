@@ -1,19 +1,8 @@
-# LaunchPad by Team Gamma
+# Implementation notes
+
+Technical detail moved out of the main README. See the README for the overview and docs/DEMO-SCRIPT.md for the walkthrough.
 
 A frontend-only React hackathon prototype for product-launch invitations, usher check-in, a branded guest experience, and audience polls.
-
-## Team Gamma
-
-| Member | Role |
-| --- | --- |
-| Alex Kinyua | Group Lead |
-| Judy Chelangot | UI/UX Designer |
-| Damaris Nzivah | Front-end Developer |
-| David Kinuthia | Full-stack Developer |
-
-We built LaunchPad together in one room on one shared laptop, so the first commit was pushed from one machine and does not reflect who did what. See [CONTRIBUTING.md](CONTRIBUTING.md) for how we worked.
-
-**Built:** usher check-in (search + typed code in place of QR), attendee mobile poll, organizer dashboard, plus guest/team/product management. **Not built / future:** QR scanning, shared backend and real-time sync across phones, production authentication, verified email delivery, pricing at launch. State is browser-local (see "Storage and exports" below).
 
 ## Vercel deployment
 
@@ -23,7 +12,7 @@ Import this repository with the project root set to the directory containing `pa
 
 Set `VITE_EMAIL_MODE=preview` for the public demo. Do not upload `.env` files or private keys. To make the deployed demo accessible without a Vercel login, review the project's Deployment Protection settings and verify its production URL in a signed-out browser. The `public` option in `vercel.json` controls visibility of build logs/source and does not disable visitor authentication.
 
-**Live demo:** Not deployed or verified yet. Replace this line with the verified production URL after deployment. The deployment link above opens Vercel's setup flow; it is not a live demo URL.
+**Live demo:** https://launchpad-team-gamma.vercel.app
 
 Each visitor still has separate browser-local guests, admissions, usher accounts and poll results. A public deployment does not add shared storage or production authentication.
 
@@ -42,7 +31,7 @@ Saved browser data upgrades automatically to content revision 3. Existing codes,
 
 ### Access from another device on the same network
 
-Open the development server's printed **Network** URL on the other device (currently `http://172.22.2.25:5173/` on this Wi-Fi connection). `localhost` on a phone refers to the phone itself. The IP can change between networks. Refresh the device after updating this project.
+Open the development server's printed **Network** URL on the other device (currently `http://<your-LAN-IP>:5173/` on this Wi-Fi connection). `localhost` on a phone refers to the phone itself. The IP can change between networks. Refresh the device after updating this project.
 
 Password checks work on local-network HTTP: secure origins use native SubtleCrypto; HTTP origins use `@noble/hashes` PBKDF2-HMAC-SHA256 with the same salt encoding, 100,000 iterations and 32-byte output as existing accounts. Event IDs use native randomUUID when available and cryptographically random UUIDv4 values from getRandomValues otherwise. Existing demo passwords do not change.
 
@@ -81,7 +70,7 @@ docs/               Product documentation, pitch prompt and validation notes
 .vscode/            Development, build, test and debugger shortcuts
 ```
 
-EmailJS setup is deferred. `VITE_EMAIL_MODE=preview` is the default in the environment files, so email actions produce previews and development terminal logs. Later, finish the provider template setup and explicitly set `VITE_EMAIL_MODE=live` in `.env.local`, then restart or rebuild. The supplied public configuration is retained for that step.
+EmailJS setup is deferred. `VITE_EMAIL_MODE=preview` is the default in the environment files, so email actions produce previews and development terminal logs. Later, finish the provider template setup and explicitly set `VITE_EMAIL_MODE=live` in `.env.local`, then restart or rebuild.
 
 ## Run locally
 
@@ -93,27 +82,6 @@ npm run dev
 ```
 
 Open the printed URL, normally <http://localhost:5173>. `npm test` checks domain rules; `npm run build` produces the static site in `dist/`. `npm run preview` serves that build.
-
-## Demo accounts
-
-| Role | Email | Password |
-| --- | --- | --- |
-| Verdae client admin | <judieysiggy@gmail.com> | Launch123! |
-| Verdae usher | <usher@verdae.demo> | Welcome123! |
-| Second client admin | <admin@studio.demo> | Launch123! |
-
-These are deliberately public demo credentials. Never reuse these passwords elsewhere.
-
-## Five-minute demo
-
-1. Open the landing page and sign in as Verdae admin.
-2. Show the dashboard, product/event settings, 150 guests and two live polls.
-3. Open Guest list and prepare invitations. Without EmailJS they become previews. Expand an email in Email outbox and show the corresponding terminal output from `npm run dev`.
-4. Open Guest view for VD-0001 in another tab. It displays the ticket and waits for check-in. Keep this tab in the same browser.
-5. In a separate tab, sign out of the admin session in that tab, sign in as the demo usher, search VD-0001 and admit the guest. Admission also prepares the guest-link email.
-6. Return to the guest tab. Discover the Verdae story, switch to Live polls, and choose an answer.
-7. Return to the admin tab. Check-in count and poll results update through browser storage events. A second attempt to admit the same ticket or vote in the same poll is refused.
-8. Sign in as the second client to demonstrate separate client data. This is logical isolation only, not a security boundary.
 
 ## Storage and exports
 

@@ -1,6 +1,6 @@
 # LaunchPad
 
-**Product owner:** Team Gamma · **Version:** Hackathon prototype 1.0 · **Prepared:** 31 October 2026
+**Client:** Oxygene · **Built by:** Team Gamma · **Version:** Hackathon prototype 1.0 · **Prepared:** 31 October 2026
 
 ## Product purpose
 

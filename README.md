@@ -30,7 +30,7 @@ All three Brief A must-haves are covered; a typed code stands in for QR scanning
 | Alex Kinyua | Group Lead | Scope, repo admin, deployment, docs, reviews |
 | Judy Chelangot | UI/UX Designer | Design system, flows, phone-first screens |
 | Damaris Nzivah | Front-end Developer | Screens, responsiveness |
-| David Kinuthia | Full-stack Developer | Data logic, tests, admin, Vercel config |
+| David Kinuthia | Full-stack Developer | Data logic, tests, admin screens, Vercel config |
 
 We built LaunchPad together on one shared laptop, so the first commit does not show who did what. See [CONTRIBUTING.md](CONTRIBUTING.md).
 

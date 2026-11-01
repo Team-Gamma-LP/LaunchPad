@@ -2,6 +2,18 @@
 
 Use **one browser** and separate tabs, because state is stored in that browser's localStorage and is not shared across devices.
 
+## Direct links
+
+Open the app once first so the seed data loads in your browser.
+
+| Screen | Link |
+| --- | --- |
+| Landing | https://launchpad-team-gamma.vercel.app/ |
+| Login (use the role buttons) | https://launchpad-team-gamma.vercel.app/#/login |
+| Guest view, ticket VD-0001 | https://launchpad-team-gamma.vercel.app/#/guest/verdae/22b99ec25f47bef7cab1afa9b03896bcccf9 |
+
+The admin and usher screens need a signed-in tab, so reach them through the login page.
+
 ## Demo logins
 
 These are public throwaway demo credentials. The login page's role buttons skip typing them.

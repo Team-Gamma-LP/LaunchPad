@@ -22,7 +22,7 @@ Validated locally on 31 October 2026.
 
 - Nine automated tests pass. New coverage checks the fallback against all seeded admin credentials and the seeded usher, rejects incorrect passwords, compares native/JS/Node PBKDF2 outputs with Unicode input, and checks UUIDv4 formatting and uniqueness without randomUUID.
 - Production build passes with the JavaScript password fallback split into lazy-loaded chunks.
-- Browser login succeeded as both the Verdae admin and demo usher at `http://172.22.2.25:5173/`, exercising the non-localhost HTTP origin that caused the reported issue. Physical-device testing was not performed.
+- Browser login succeeded as both the Verdae admin and demo usher at `http://<your-LAN-IP>:5173/`, exercising the non-localhost HTTP origin that caused the reported issue. Physical-device testing was not performed.
 - No stored password hashes or existing passwords were changed. No emails were sent during this fix.
 
 ## Visual refinement validation

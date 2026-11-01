@@ -10,13 +10,13 @@ Oxygene's ushers lose time searching printed guest lists at the door, and the cl
 
 ## What it does
 
-| Brief must-have | LaunchPad |
-| --- | --- |
-| Usher screen to search guests and mark them checked in (typed code stands in for QR) | Usher portal: search by check-in code or name, admit, duplicate admission refused |
-| Attendee mobile poll screen | Personal guest link that unlocks after admission: product story and live polls, one vote per poll |
-| Organizer view with check-in count and live poll results | Admin dashboard with attendance, arrivals and results |
+| Screen | Used by | What it does |
+| --- | --- | --- |
+| **Usher check-in** | Ushers | Look up a guest by check-in code, admit them, or add and admit a walk-in; duplicate admission refused |
+| **Guest poll** | Attendees | Personal link unlocks after admission: product story and live polls, one vote per poll |
+| **Organizer dashboard** | Client admin | Check-in count, recent arrivals and poll results |
 
-Also built: guest list management (150 seeded guests), usher team, product and event setup, poll admin, and an email outbox that previews invitations.
+All three Brief A must-haves are covered; a typed code stands in for QR scanning. Also built: guest list management (150 seeded guests), usher team, product and event setup, poll admin, and an email outbox that previews invitations.
 
 ## Try it in two minutes
 
@@ -25,12 +25,12 @@ Also built: guest list management (150 seeded guests), usher team, product and e
 
 ## Team Gamma
 
-| Member | Role |
-| --- | --- |
-| Alex Kinyua | Group Lead: scope, documentation, GitHub workflow and reviews, deployment and release verification |
-| Judy Chelangot | UI/UX Designer |
-| Damaris Nzivah | Front-end Developer |
-| David Kinuthia | Full-stack Developer |
+| Member | Role | Focus |
+| --- | --- | --- |
+| Alex Kinyua | Group Lead | Scope, repo admin, deployment, docs, reviews |
+| Judy Chelangot | UI/UX Designer | Design system, flows, phone-first screens |
+| Damaris Nzivah | Front-end Developer | Screens, responsiveness |
+| David Kinuthia | Full-stack Developer | Data logic, tests, admin, Vercel config |
 
 We built LaunchPad together on one shared laptop, so the first commit does not show who did what. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
@@ -50,7 +50,7 @@ Stack: React, Vite, browser localStorage. Deployed as a static site on Vercel.
 - **No shared backend.** Data lives in each browser's localStorage, so check-ins and votes do not sync across phones. Demo all roles in tabs of one browser. A shared backend with real-time sync is the first production step.
 - **Demo authentication only.** Accounts ship as downloadable seed data.
 - **Email is preview only.** Delivery through EmailJS was not verified.
-- **Typed code instead of QR scanning.** As the brief allows.
+- **Typed code instead of QR scanning.** The usher looks up guests by exact check-in code. Name search is not built.
 - **Future work:** pricing at launch, multi-event workspaces, QR scanning, delivery reporting.
 
 ## More documentation

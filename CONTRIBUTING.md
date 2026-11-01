@@ -6,12 +6,16 @@ LaunchPad by Team Gamma, built for the Oxygene Graduate Trainee Hackathon (31 Oc
 
 | Member | Role | Focus |
 | --- | --- | --- |
-| Alex Kinyua | Group Lead | Scope, documentation, coordination, review |
+| Alex Kinyua | Group Lead | Scope, repo admin, deployment, docs, reviews |
 | Judy Chelangot | UI/UX Designer | Design system, flows, phone-first screens |
 | Damaris Nzivah | Front-end Developer | Screens, responsiveness |
-| David Kinuthia | Full-stack Developer | Data logic, tests, admin, deployment |
+| David Kinuthia | Full-stack Developer | Data logic, tests, admin, Vercel config |
 
 Focus areas are indicative. During the hackathon everyone contributed across design, build and documentation.
+
+## Lead responsibilities
+
+Alex Kinyua (Group Lead) set scope and priorities, administers the repository and its GitHub workflow (branches, pull requests and reviews), ran the production deployment and domain on Vercel, verified the live site, and maintains the project documentation (README, CONTRIBUTING, demo script).
 
 ## How the work was done
 

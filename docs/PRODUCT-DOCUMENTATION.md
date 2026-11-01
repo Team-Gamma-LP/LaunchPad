@@ -6,7 +6,7 @@
 
 LaunchPad gives Team Gamma a repeatable way to run product launches for multiple clients. It connects three moments: inviting an audience, welcoming people at the door, and engaging them during the presentation. The initial brief describes approximately 200 attendees; this prototype seeds 150 invitations and configures capacity as 200.
 
-The pilot is Verdae, with an event on 1 December 2026 at Two Rivers Mall. The 5:00 pm start is a placeholder pending confirmation. The account is assigned to judieysiggy@gmail.com. Four user-supplied emails are the only real guest recipients; remaining addresses are dummy `.invalid` addresses. Display names are synthetic and are not claims about the owners of the test email addresses.
+The pilot is Verdae, with an event on 1 December 2026 at Two Rivers Mall. The 5:00 pm start is a placeholder pending confirmation. The account is assigned to admin@verdae.demo. Four user-supplied emails are the only real guest recipients; remaining addresses are dummy `.invalid` addresses. Display names are synthetic and are not claims about the owners of the test email addresses.
 
 ## Problem and value
 

@@ -20,7 +20,7 @@ These are public throwaway demo credentials. The login page's role buttons skip 
 
 | Role | Email | Password |
 | --- | --- | --- |
-| Client admin | judieysiggy@gmail.com | Launch123! |
+| Client admin | admin@verdae.demo | Launch123! |
 | Usher | usher@verdae.demo | Welcome123! |
 | Second client admin | admin@studio.demo | Launch123! |
 

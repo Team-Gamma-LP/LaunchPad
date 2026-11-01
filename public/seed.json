@@ -56,7 +56,7 @@
         {
           "id": "guest-1",
           "name": "Amani Kamau",
-          "email": "dmuriu0@gmail.com",
+          "email": "guest1@demo.invalid",
           "realRecipient": true,
           "token": "22b99ec25f47bef7cab1afa9b03896bcccf9",
           "admittedAt": null,
@@ -68,7 +68,7 @@
         {
           "id": "guest-2",
           "name": "Alex Kamau",
-          "email": "damarisnziva01@gmail.com",
+          "email": "guest2@demo.invalid",
           "realRecipient": true,
           "token": "54aff0883f4d1c5cfa999fe31831de3ada53",
           "admittedAt": null,
@@ -80,7 +80,7 @@
         {
           "id": "guest-3",
           "name": "Sam Kamau",
-          "email": "judieysiggy@gmail.com",
+          "email": "admin@verdae.demo",
           "realRecipient": true,
           "token": "e0d555e86d570ed2a960e94d876de4885544",
           "admittedAt": null,
@@ -92,7 +92,7 @@
         {
           "id": "guest-4",
           "name": "Jordan Kamau",
-          "email": "alemaina867@gmail.com",
+          "email": "guest3@demo.invalid",
           "realRecipient": true,
           "token": "e092ff5e2fc049cc5fc6b97132b0fc2b9179",
           "admittedAt": null,

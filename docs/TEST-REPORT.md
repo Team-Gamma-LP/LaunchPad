@@ -65,7 +65,7 @@ Browser testing used a dummy email recipient. The source seed remains clean with
 
 ## Not verified / limitations
 
-- EmailJS integration was tested using the supplied service/public key and corrected template ID `template_dbb8hft`, with a browser invitation attempt to dmuriu0@gmail.com. The template is now recognized, but EmailJS returned “The recipients address is empty”. The template must map its To Email field to `{{to_email}}`; the application supplies this parameter. No successful real delivery is claimed. An earlier display-name template value was rejected as not found. A separate terminal test was refused by the account's browser-only API policy; that policy was left unchanged.
+- EmailJS integration was tested using the supplied service/public key and corrected template ID `template_dbb8hft`, with a browser invitation attempt to guest1@demo.invalid. The template is now recognized, but EmailJS returned “The recipients address is empty”. The template must map its To Email field to `{{to_email}}`; the application supplies this parameter. No successful real delivery is claimed. An earlier display-name template value was rejected as not found. A separate terminal test was refused by the account's browser-only API policy; that policy was left unchanged.
 - No multi-device sync or production security testing is claimed; those are outside the frontend-only architecture.
 - Team onboarding, product upload, bulk invitation delivery and JSON downloads are implemented but have not received full end-to-end browser coverage.
 - No load, concurrency, accessibility audit, cross-browser matrix or physical-device testing was performed.

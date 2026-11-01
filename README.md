@@ -2,6 +2,19 @@
 
 A frontend-only React hackathon prototype for product-launch invitations, usher check-in, a branded guest experience, and audience polls.
 
+## Team Gamma
+
+| Member | Role |
+| --- | --- |
+| Alex Kinyua | Group Lead |
+| Judy Chelangot | UI/UX Designer |
+| Damaris Nzivah | Front-end Developer |
+| David Kinuthia | Full-stack Developer |
+
+We built LaunchPad together in one room on one shared laptop, so the first commit was pushed from one machine and does not reflect who did what. See [CONTRIBUTING.md](CONTRIBUTING.md) for how we worked.
+
+**Built:** usher check-in (search + typed code in place of QR), attendee mobile poll, organizer dashboard, plus guest/team/product management. **Not built / future:** QR scanning, shared backend and real-time sync across phones, production authentication, verified email delivery, pricing at launch. State is browser-local (see "Storage and exports" below).
+
 ## Vercel deployment
 
 [Deploy LaunchPad to Vercel](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FTeam-Gamma-LP%2FLaunchPad)

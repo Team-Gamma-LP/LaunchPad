@@ -6,3 +6,5 @@ dist/
 .vercel/
 .openai/
 *.log
+.vercel
+.env*
